@@ -16,6 +16,7 @@
 		FA0C51BE21DEAA9F001486D4 /* PlayingCardsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0C51BD21DEAA9F001486D4 /* PlayingCardsTests.swift */; };
 		FA0C51C921DEAA9F001486D4 /* PlayingCardsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0C51C821DEAA9F001486D4 /* PlayingCardsUITests.swift */; };
 		FA0C51D721DEAAAD001486D4 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0C51D621DEAAAD001486D4 /* File.swift */; };
+		FA0C51D921DEBDE9001486D4 /* PlayingCardDack.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0C51D821DEBDE9001486D4 /* PlayingCardDack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		FA0C51C821DEAA9F001486D4 /* PlayingCardsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingCardsUITests.swift; sourceTree = "<group>"; };
 		FA0C51CA21DEAA9F001486D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA0C51D621DEAAAD001486D4 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		FA0C51D821DEBDE9001486D4 /* PlayingCardDack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingCardDack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 			children = (
 				FA0C51A521DEAA9E001486D4 /* AppDelegate.swift */,
 				FA0C51A721DEAA9E001486D4 /* ViewController.swift */,
+				FA0C51D821DEBDE9001486D4 /* PlayingCardDack.swift */,
 				FA0C51D621DEAAAD001486D4 /* File.swift */,
 				FA0C51A921DEAA9E001486D4 /* Main.storyboard */,
 				FA0C51AF21DEAA9E001486D4 /* Assets.xcassets */,
@@ -263,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA0C51A821DEAA9E001486D4 /* ViewController.swift in Sources */,
+				FA0C51D921DEBDE9001486D4 /* PlayingCardDack.swift in Sources */,
 				FA0C51D721DEAAAD001486D4 /* File.swift in Sources */,
 				FA0C51A621DEAA9E001486D4 /* AppDelegate.swift in Sources */,
 				FA0C51AE21DEAA9E001486D4 /* PlayingCards.xcdatamodeld in Sources */,

@@ -9,10 +9,19 @@
 import UIKit
 
 class ViewController: UIViewController {
+    var dackofCards = PlayingCardDack()
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        for _ in 1...10 {
+            if let card = dackofCards.draw() {
+                print("\(card)")
+            }else{
+                print("dack empty")
+            }
+            
+        }
     }
 
 
