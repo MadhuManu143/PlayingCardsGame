@@ -9,9 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController {
-    var dackofCards = PlayingCardDack()
     
-
+    var dackofCards = PlayingCardDack()
     override func viewDidLoad() {
         super.viewDidLoad()
         for _ in 1...10 {
