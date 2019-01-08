@@ -7,11 +7,14 @@
 //
 
 import UIKit
-
+@IBDesignable
 class PlayingCardView: UIView {
-    var rank = 5
-    var suit = "♥️"
-    var isFaceUp = true
+    @IBInspectable
+    var rank : Int = 5 {didSet{setNeedsDisplay();setNeedsLayout()}}
+    @IBInspectable
+    var suit : String = "♥️"{didSet{setNeedsDisplay();setNeedsLayout()}}
+    @IBInspectable
+    var isFaceUp : Bool = true{didSet{setNeedsDisplay();setNeedsLayout()}}
     
     private var cornerString : NSAttributedString {
         return centeredAttributedString(rankString+"\n"+suit , setFont: cornerFontSize)
