@@ -11,6 +11,21 @@ import UIKit
 class ViewController: UIViewController {
     
     var dackofCards = PlayingCardDack()
+    
+    
+    @IBOutlet weak var playingCardView: PlayingCardView! {
+        didSet {
+            let swipe = UISwipeGestureRecognizer(target: self, action: #selector(nextCard))
+            swipe.direction = [.left,.right]
+            playingCardView.addGestureRecognizer(swipe)
+        }
+    }
+    @objc func nextCard() {
+        if let dack = dackofCards.draw() {
+            playingCardView.suit = dack.suit.rawValue
+            playingCardView.rank = dack.rank.order
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         for _ in 1...10 {
